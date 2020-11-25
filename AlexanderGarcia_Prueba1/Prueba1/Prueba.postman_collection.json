@@ -1,0 +1,7227 @@
+{
+	"info": {
+		"_postman_id": "72ab3ea3-16df-4fcd-87b9-9e7944f88b52",
+		"name": "node-js-loop-back-api",
+		"description": "NodeJS LoopBackAPI\n\nContact Support:\n Name: Aeroclub Evcoar\n Email: alexandergarcia98_5@hotmail.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "articulos",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Articulos Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\",\n    \"costoUnitario\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/articulos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"articulos",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "dcb4c486-5d9c-4b1b-a4dc-05a5c21389f7",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Articulos PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\",\n    \"costoUnitario\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/articulos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"articulos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Articulos Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\",\n    \"costoUnitario\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/articulos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"articulos",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "7ba56b09-3dc4-46fc-bd95-6f703f7396ff",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Articulos PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\",\n    \"costoUnitario\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/articulos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"articulos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Articulos Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/articulos/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"articulos",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "527f0f7f-0c6d-48fa-b0a6-8cc388ef62d6",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Articulos model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/articulos/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"articulos",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": 50223973.32613689,\n \"descripcion\": \"ex magna sint in eu\",\n \"costoUnitario\": -3722577.8053991795\n}"
+								}
+							]
+						},
+						{
+							"name": "Articulos Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/articulos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"articulos",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "fef4aa4f-6ec0-4c69-84d4-903fb724800d",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Articulos DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/articulos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"articulos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Articulos Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\",\n    \"costoUnitario\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/articulos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"articulos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Articulos model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\",\n    \"costoUnitario\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/articulos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"articulos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 35086228.47027388,\n \"descripcion\": \"veniam est in in\",\n \"costoUnitario\": 31242917.7344642\n}"
+						}
+					]
+				},
+				{
+					"name": "Articulos Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\",\n    \"costoUnitario\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/articulos?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"articulos"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Articulos PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\",\n    \"costoUnitario\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/articulos?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"articulos"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Articulos Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/articulos?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"articulos"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Articulos model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/articulos?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"articulos"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": 80868310.30627257,\n  \"descripcion\": \"aliquip reprehenderit magna id\",\n  \"costoUnitario\": -13488889.37155363\n },\n {\n  \"id\": -89008822.25574213,\n  \"descripcion\": \"dolore\",\n  \"costoUnitario\": 38801602.86157909\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Articulos Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/articulos/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"articulos",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Articulos model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/articulos/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"articulos",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Clientes Repository Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "b808b01e-2a84-421a-9410-46cc6040be91",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Clientes PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Clientes Repository Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "2dcc8093-6f40-4b59-85e5-3604e72613c9",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Clientes PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Clientes Repository Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "d80f864c-93bb-41f4-8beb-57c1b6935dcc",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Clientes model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": 32762383.557989597,\n \"nombre\": \"s\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Clientes Repository Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "b6783b6c-7e26-43f1-b4c3-0a48e86c78f1",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Clientes DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Clientes Repository Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clientes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Clientes model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 79451625.06897357,\n \"nombre\": \"dolor labore officia ex incididunt\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Clientes Repository Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clientes?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Clientes PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Clientes Repository Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clientes?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Clientes model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/clientes?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": -65230764.01214691,\n  \"nombre\": \"id proident\"\n },\n {\n  \"id\": 60676273.987308204,\n  \"nombre\": \"cillum tem\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Clientes Repository Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clientes/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Clientes model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/clientes/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "compra-a-proveedores",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Compra A Proveedores Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<number>\",\n    \"impuesto\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "67be40f9-883e-424c-bcd7-3877403446de",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "CompraAProveedores PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<number>\",\n    \"impuesto\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/compra-a-proveedores/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"compra-a-proveedores",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Compra A Proveedores Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<number>\",\n    \"impuesto\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "ea008f3d-0a73-476c-bf6f-f24bc37e1fd0",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "CompraAProveedores PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<number>\",\n    \"impuesto\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/compra-a-proveedores/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"compra-a-proveedores",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Compra A Proveedores Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "efe2ae45-5edd-44ef-9fad-0d6c481585d0",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "CompraAProveedores model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/compra-a-proveedores/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"compra-a-proveedores",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": 75329775.19354472,\n \"total\": -31471579.824441284,\n \"impuesto\": -28711030.866955638,\n \"fecha\": \"1991-12-23T21:19:20.012Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Compra A Proveedores Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "3b07cd7d-66b8-4117-a2cb-dbda6b55a3b3",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "CompraAProveedores DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/compra-a-proveedores/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"compra-a-proveedores",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Compra A Proveedores Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<number>\",\n    \"impuesto\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/compra-a-proveedores",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"compra-a-proveedores"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CompraAProveedores model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<number>\",\n    \"impuesto\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 98669831.97383651,\n \"total\": 40522395.70945212,\n \"impuesto\": -28174996.232098162,\n \"fecha\": \"2000-02-07T06:33:37.906Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Compra A Proveedores Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<number>\",\n    \"impuesto\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/compra-a-proveedores?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"compra-a-proveedores"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CompraAProveedores PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<number>\",\n    \"impuesto\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Compra A Proveedores Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/compra-a-proveedores?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"compra-a-proveedores"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of CompraAProveedores model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": -86138995.40254533,\n  \"total\": -42479135.35652436,\n  \"impuesto\": 96243457.48603857,\n  \"fecha\": \"1961-08-28T20:46:55.173Z\"\n },\n {\n  \"id\": 55506973.45263046,\n  \"total\": -43018186.239543654,\n  \"impuesto\": -55549429.21080404,\n  \"fecha\": \"2006-05-14T06:37:11.210Z\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Compra A Proveedores Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/compra-a-proveedores/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"compra-a-proveedores",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CompraAProveedores model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "compra-a-proveedores-detalles",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Compra A Proveedores Detalle Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idCompra\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores-detalles/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores-detalles",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "273b7453-8f15-48f8-b6cf-86bef3b0f512",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "CompraAProveedoresDetalle PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idCompra\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/compra-a-proveedores-detalles/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"compra-a-proveedores-detalles",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Compra A Proveedores Detalle Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idCompra\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores-detalles/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores-detalles",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "34d7d028-4695-4aca-942f-b06a1f637032",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "CompraAProveedoresDetalle PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idCompra\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/compra-a-proveedores-detalles/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"compra-a-proveedores-detalles",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Compra A Proveedores Detalle Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores-detalles/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores-detalles",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "c4c658e5-b8ae-4dd4-a2a4-8167deec6c77",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "CompraAProveedoresDetalle model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/compra-a-proveedores-detalles/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"compra-a-proveedores-detalles",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idCompra\": -54791267.214771636,\n \"idArticulo\": -10282411.521636665,\n \"cantidad\": 58990391.730380535,\n \"monto\": 53768205.97661179\n}"
+								}
+							]
+						},
+						{
+							"name": "Compra A Proveedores Detalle Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores-detalles/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores-detalles",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "0e7d25b1-7851-4157-8080-9ebb2e2e524d",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "CompraAProveedoresDetalle DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/compra-a-proveedores-detalles/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"compra-a-proveedores-detalles",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Compra A Proveedores Detalle Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idCompra\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/compra-a-proveedores-detalles",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"compra-a-proveedores-detalles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CompraAProveedoresDetalle model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idCompra\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores-detalles",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores-detalles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"idCompra\": -83790520.68003184,\n \"idArticulo\": -43792505.69350215,\n \"cantidad\": 80074073.17998427,\n \"monto\": 96496901.78237122\n}"
+						}
+					]
+				},
+				{
+					"name": "Compra A Proveedores Detalle Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idCompra\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/compra-a-proveedores-detalles?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"compra-a-proveedores-detalles"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CompraAProveedoresDetalle PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idCompra\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores-detalles?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores-detalles"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Compra A Proveedores Detalle Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/compra-a-proveedores-detalles?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"compra-a-proveedores-detalles"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of CompraAProveedoresDetalle model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores-detalles?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores-detalles"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"idCompra\": -92558079.15305923,\n  \"idArticulo\": 72908463.11295155,\n  \"cantidad\": -20148518.118134275,\n  \"monto\": -67728564.0649405\n },\n {\n  \"idCompra\": -36024545.85399828,\n  \"idArticulo\": 60706035.60014561,\n  \"cantidad\": 57939775.69677377,\n  \"monto\": -98628100.08097394\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Compra A Proveedores Detalle Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/compra-a-proveedores-detalles/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"compra-a-proveedores-detalles",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CompraAProveedoresDetalle model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/compra-a-proveedores-detalles/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"compra-a-proveedores-detalles",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "consumo-de-casas",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Consumo De Casa Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/consumo-de-casas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"consumo-de-casas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "c92b04e0-9e8d-4df6-ad07-fdbd0eafa45c",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ConsumoDeCasa PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/consumo-de-casas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"consumo-de-casas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Consumo De Casa Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/consumo-de-casas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"consumo-de-casas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "767a2a10-5d24-4036-b89a-3505e6c360a3",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ConsumoDeCasa PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/consumo-de-casas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"consumo-de-casas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Consumo De Casa Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/consumo-de-casas/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"consumo-de-casas",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "82698dab-7a44-4b98-b864-79d7f8f5e645",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ConsumoDeCasa model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/consumo-de-casas/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"consumo-de-casas",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idArticulo\": -87279893.22496405,\n \"cantidad\": 56468714.18247366,\n \"fecha\": \"1988-12-13T13:39:22.320Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Consumo De Casa Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/consumo-de-casas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"consumo-de-casas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "add61678-c3ce-4df3-9bba-9e99d2c3db1b",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ConsumoDeCasa DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/consumo-de-casas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"consumo-de-casas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Consumo De Casa Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/consumo-de-casas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"consumo-de-casas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ConsumoDeCasa model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/consumo-de-casas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"consumo-de-casas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"idArticulo\": 73676643.35331124,\n \"cantidad\": -39693340.25937794,\n \"fecha\": \"1997-08-21T03:57:29.200Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Consumo De Casa Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/consumo-de-casas?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"consumo-de-casas"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ConsumoDeCasa PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/consumo-de-casas?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"consumo-de-casas"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Consumo De Casa Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/consumo-de-casas?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"consumo-de-casas"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of ConsumoDeCasa model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/consumo-de-casas?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"consumo-de-casas"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"idArticulo\": -5119220.893713236,\n  \"cantidad\": 36774396.821296215,\n  \"fecha\": \"2018-09-25T08:04:40.573Z\"\n },\n {\n  \"idArticulo\": 23080930.522677436,\n  \"cantidad\": 56755131.62675512,\n  \"fecha\": \"1980-05-23T04:36:11.127Z\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Consumo De Casa Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/consumo-de-casas/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"consumo-de-casas",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ConsumoDeCasa model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/consumo-de-casas/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"consumo-de-casas",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "detalle-facturas",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Detalle Factura Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idFactura\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/detalle-facturas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"detalle-facturas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "2b7901f9-6cfa-482c-90eb-324d55077ef6",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "DetalleFactura PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idFactura\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/detalle-facturas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"detalle-facturas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Detalle Factura Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idFactura\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/detalle-facturas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"detalle-facturas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "b2f50fe8-aef1-455f-9446-0a8387e07b3c",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "DetalleFactura PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idFactura\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/detalle-facturas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"detalle-facturas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Detalle Factura Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/detalle-facturas/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"detalle-facturas",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "fe67cd4f-48ad-4613-afa4-c6a973c88c71",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "DetalleFactura model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/detalle-facturas/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"detalle-facturas",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idFactura\": -66055809.69118026,\n \"idArticulo\": 91026677.07039586,\n \"cantidad\": 71813818.85433367,\n \"monto\": 85628624.37572297\n}"
+								}
+							]
+						},
+						{
+							"name": "Detalle Factura Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/detalle-facturas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"detalle-facturas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "b65afe6b-30b3-4496-8d73-07a3da3cb9d2",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "DetalleFactura DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/detalle-facturas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"detalle-facturas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Detalle Factura Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idFactura\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/detalle-facturas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"detalle-facturas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DetalleFactura model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idFactura\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/detalle-facturas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"detalle-facturas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"idFactura\": -10382436.952720255,\n \"idArticulo\": -1173073.7416650355,\n \"cantidad\": -26966695.19215353,\n \"monto\": 21949737.561033845\n}"
+						}
+					]
+				},
+				{
+					"name": "Detalle Factura Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idFactura\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/detalle-facturas?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"detalle-facturas"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DetalleFactura PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idFactura\": \"<number>\",\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"monto\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/detalle-facturas?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"detalle-facturas"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Detalle Factura Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/detalle-facturas?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"detalle-facturas"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of DetalleFactura model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/detalle-facturas?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"detalle-facturas"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"idFactura\": -93486879.57299218,\n  \"idArticulo\": -4327790.61649473,\n  \"cantidad\": -71739079.23822004,\n  \"monto\": 48170610.60237217\n },\n {\n  \"idFactura\": 69637613.77120253,\n  \"idArticulo\": 26124792.197702944,\n  \"cantidad\": -11909710.934426114,\n  \"monto\": -26425999.2058506\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Detalle Factura Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/detalle-facturas/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"detalle-facturas",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DetalleFactura model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/detalle-facturas/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"detalle-facturas",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "facturas",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Facturas Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<string>\",\n    \"numeroCaja\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/facturas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"facturas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "0fb7a3dd-9f5c-44b3-865a-95e8de05a39e",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Facturas PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<string>\",\n    \"numeroCaja\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/facturas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"facturas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Facturas Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<string>\",\n    \"numeroCaja\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/facturas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"facturas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "d4c87322-1430-4316-a7c0-ccdceed6a0ea",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Facturas PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<string>\",\n    \"numeroCaja\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/facturas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"facturas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Facturas Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/facturas/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"facturas",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "61c3cb51-39e8-403d-a16b-1037a265995a",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Facturas model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/facturas/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"facturas",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": -109876.74383500218,\n \"total\": \"amet ullamco\",\n \"numeroCaja\": 91452713.43660086,\n \"fecha\": \"1990-08-18T14:36:14.145Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Facturas Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/facturas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"facturas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "cb681a54-c4f6-47f8-81b6-67636796fee8",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Facturas DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/facturas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"facturas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Facturas Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<string>\",\n    \"numeroCaja\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/facturas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"facturas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Facturas model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<string>\",\n    \"numeroCaja\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/facturas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"facturas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": -15548272.992943615,\n \"total\": \"Lorem\",\n \"numeroCaja\": -71340159.64288118,\n \"fecha\": \"1956-01-31T12:43:36.811Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Facturas Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<string>\",\n    \"numeroCaja\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/facturas?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"facturas"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Facturas PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"total\": \"<string>\",\n    \"numeroCaja\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/facturas?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"facturas"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Facturas Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/facturas?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"facturas"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Facturas model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/facturas?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"facturas"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": 52831281.55523485,\n  \"total\": \"quis\",\n  \"numeroCaja\": 6435842.328046486,\n  \"fecha\": \"1989-11-09T03:18:18.390Z\"\n },\n {\n  \"id\": 62019693.434719115,\n  \"total\": \"sunt ea Ut ullamco dolore\",\n  \"numeroCaja\": -10226999.260856345,\n  \"fecha\": \"1980-12-27T03:38:56.754Z\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Facturas Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/facturas/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"facturas",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Facturas model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/facturas/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"facturas",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "historial-pagos-de-clientes",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Historial Pagos De Cliente Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idPago\": \"<number>\",\n    \"idCliente\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/historial-pagos-de-clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"historial-pagos-de-clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "0d98d988-9d90-4bf6-8658-01f99f955e28",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "HistorialPagosDeCliente PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idPago\": \"<number>\",\n    \"idCliente\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/historial-pagos-de-clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"historial-pagos-de-clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Historial Pagos De Cliente Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idPago\": \"<number>\",\n    \"idCliente\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/historial-pagos-de-clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"historial-pagos-de-clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "d7251b6e-b08b-4026-826d-88750abdf68e",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "HistorialPagosDeCliente PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idPago\": \"<number>\",\n    \"idCliente\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/historial-pagos-de-clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"historial-pagos-de-clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Historial Pagos De Cliente Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/historial-pagos-de-clientes/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"historial-pagos-de-clientes",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "3ca7a843-24b0-496a-9fd9-9b27193d9e46",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "HistorialPagosDeCliente model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/historial-pagos-de-clientes/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"historial-pagos-de-clientes",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idPago\": -63231340.64786484,\n \"idCliente\": -72119883.4837434\n}"
+								}
+							]
+						},
+						{
+							"name": "Historial Pagos De Cliente Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/historial-pagos-de-clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"historial-pagos-de-clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "056b619c-9931-4e69-a1c5-b58b993c2cf0",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "HistorialPagosDeCliente DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/historial-pagos-de-clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"historial-pagos-de-clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Historial Pagos De Cliente Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idPago\": \"<number>\",\n    \"idCliente\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/historial-pagos-de-clientes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"historial-pagos-de-clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "HistorialPagosDeCliente model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idPago\": \"<number>\",\n    \"idCliente\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/historial-pagos-de-clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"historial-pagos-de-clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"idPago\": 5988297.2868928015,\n \"idCliente\": 16465863.331261635\n}"
+						}
+					]
+				},
+				{
+					"name": "Historial Pagos De Cliente Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idPago\": \"<number>\",\n    \"idCliente\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/historial-pagos-de-clientes?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"historial-pagos-de-clientes"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "HistorialPagosDeCliente PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idPago\": \"<number>\",\n    \"idCliente\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/historial-pagos-de-clientes?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"historial-pagos-de-clientes"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Historial Pagos De Cliente Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/historial-pagos-de-clientes?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"historial-pagos-de-clientes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of HistorialPagosDeCliente model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/historial-pagos-de-clientes?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"historial-pagos-de-clientes"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"idPago\": -15696026.440223947,\n  \"idCliente\": -65341328.45821858\n },\n {\n  \"idPago\": 89421748.26547387,\n  \"idCliente\": 8757869.787320465\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Historial Pagos De Cliente Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/historial-pagos-de-clientes/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"historial-pagos-de-clientes",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "HistorialPagosDeCliente model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/historial-pagos-de-clientes/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"historial-pagos-de-clientes",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "inventarios",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Inventario Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"idProveedor\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/inventarios/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"inventarios",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "6af7e497-d633-4a87-a71c-8fa218358723",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Inventario PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"idProveedor\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/inventarios/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"inventarios",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Inventario Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"idProveedor\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/inventarios/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"inventarios",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "4ec99bec-d3b9-49d1-9a63-94a997e6b108",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Inventario PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"idProveedor\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/inventarios/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"inventarios",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Inventario Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/inventarios/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"inventarios",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "9d779aa7-3d87-465c-a65b-52e608b2def4",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Inventario model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/inventarios/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"inventarios",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idArticulo\": 91394755.21501032,\n \"cantidad\": -5392464.696882054,\n \"idProveedor\": 78238604.353181\n}"
+								}
+							]
+						},
+						{
+							"name": "Inventario Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/inventarios/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"inventarios",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "47c1f135-4384-44e0-a91d-420129bff7a5",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Inventario DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/inventarios/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"inventarios",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Inventario Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"idProveedor\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/inventarios",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"inventarios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Inventario model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"idProveedor\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/inventarios",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"inventarios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"idArticulo\": -95166143.8613999,\n \"cantidad\": -56056262.815567724,\n \"idProveedor\": 37653111.660796374\n}"
+						}
+					]
+				},
+				{
+					"name": "Inventario Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"idProveedor\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/inventarios?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"inventarios"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Inventario PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idArticulo\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"idProveedor\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/inventarios?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"inventarios"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Inventario Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/inventarios?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"inventarios"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Inventario model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/inventarios?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"inventarios"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"idArticulo\": -5669522.179767877,\n  \"cantidad\": -96832560.86085325,\n  \"idProveedor\": -41868873.94462491\n },\n {\n  \"idArticulo\": 15452981.687513694,\n  \"cantidad\": -11973341.113432795,\n  \"idProveedor\": 94737266.50063759\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Inventario Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/inventarios/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"inventarios",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Inventario model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/inventarios/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"inventarios",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "pagos-de-clientes",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Pagos De Cliente Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pagos-de-clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pagos-de-clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "1b4ea95b-6f5e-4a44-ab2f-d03dd69ffa5e",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "PagosDeCliente PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pagos-de-clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pagos-de-clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Pagos De Cliente Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pagos-de-clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pagos-de-clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "7385a910-3b60-48e6-aee7-73fb9e6a4e9f",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "PagosDeCliente PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pagos-de-clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pagos-de-clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Pagos De Cliente Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/pagos-de-clientes/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pagos-de-clientes",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "66400156-aa23-48a6-84d6-3f1c899bb822",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "PagosDeCliente model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/pagos-de-clientes/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pagos-de-clientes",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": -87001128.70069891,\n \"cantidad\": 89726278.02889344,\n \"fecha\": \"1997-07-07T00:45:33.142Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Pagos De Cliente Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/pagos-de-clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pagos-de-clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "f17c3eff-4358-4c61-b743-76cb65e764e1",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "PagosDeCliente DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/pagos-de-clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pagos-de-clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Pagos De Cliente Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pagos-de-clientes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pagos-de-clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PagosDeCliente model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pagos-de-clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pagos-de-clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 67027924.48405072,\n \"cantidad\": -75597738.63198295,\n \"fecha\": \"1949-06-20T21:49:36.785Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Pagos De Cliente Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pagos-de-clientes?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pagos-de-clientes"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PagosDeCliente PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"cantidad\": \"<number>\",\n    \"fecha\": \"<dateTime>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pagos-de-clientes?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pagos-de-clientes"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Pagos De Cliente Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/pagos-de-clientes?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pagos-de-clientes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of PagosDeCliente model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/pagos-de-clientes?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pagos-de-clientes"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": -20585529.053897306,\n  \"cantidad\": -63729585.19175191,\n  \"fecha\": \"1985-04-10T17:29:40.701Z\"\n },\n {\n  \"id\": -73729749.48950191,\n  \"cantidad\": 33428873.202421978,\n  \"fecha\": \"1942-07-10T06:47:20.953Z\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Pagos De Cliente Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/pagos-de-clientes/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pagos-de-clientes",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PagosDeCliente model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/pagos-de-clientes/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pagos-de-clientes",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "proveedores",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Proveedores Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/proveedores/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"proveedores",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "27539404-8242-4083-8a0f-7d01fe8b0684",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Proveedores PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/proveedores/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"proveedores",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Proveedores Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/proveedores/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"proveedores",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "197402c4-a344-44e5-a8ff-edd1518e4203",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Proveedores PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/proveedores/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"proveedores",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Proveedores Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/proveedores/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"proveedores",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "61954691-7adc-4a26-87cf-dea7c1757779",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Proveedores model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/proveedores/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"proveedores",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": -93318116.37856133,\n \"nombre\": \"sed\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Proveedores Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/proveedores/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"proveedores",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "fc86d02a-09ee-4d32-9dc8-0f07b29b89b9",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Proveedores DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/proveedores/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"proveedores",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Proveedores Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/proveedores",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"proveedores"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Proveedores model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/proveedores",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"proveedores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": -2151664.617479816,\n \"nombre\": \"in Duis proident sin\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Proveedores Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/proveedores?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"proveedores"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Proveedores PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"nombre\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/proveedores?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"proveedores"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Proveedores Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/proveedores?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"proveedores"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Proveedores model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/proveedores?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"proveedores"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": -37906006.6023182,\n  \"nombre\": \"consequat s\"\n },\n {\n  \"id\": 46334901.17268407,\n  \"nombre\": \"in dolore\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Proveedores Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/proveedores/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"proveedores",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Proveedores model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/proveedores/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"proveedores",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "tipo-cuentas",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Tipo Cuentas Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/tipo-cuentas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tipo-cuentas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "23614eb6-bffa-4c74-a182-610cd5c71ecd",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "TipoCuentas PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/tipo-cuentas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"tipo-cuentas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Tipo Cuentas Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/tipo-cuentas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tipo-cuentas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "1be262f6-c0c7-40c4-b76e-cc0ac164e0c2",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "TipoCuentas PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/tipo-cuentas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"tipo-cuentas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Tipo Cuentas Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tipo-cuentas/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tipo-cuentas",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "9d5196cb-a73e-4c76-9ef7-06bc0a138ae4",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "TipoCuentas model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/tipo-cuentas/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"tipo-cuentas",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": -69191724.68914235,\n \"descripcion\": \"labore minim incididunt ullamco\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Tipo Cuentas Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tipo-cuentas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tipo-cuentas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "d7ba4c62-cd84-4e14-8b3e-3ce17eb81461",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "TipoCuentas DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/tipo-cuentas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"tipo-cuentas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Tipo Cuentas Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"descripcion\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/tipo-cuentas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tipo-cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "TipoCuentas model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"descripcion\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/tipo-cuentas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tipo-cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": -70054135.655726,\n \"descripcion\": \"velit Ut\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Tipo Cuentas Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/tipo-cuentas?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tipo-cuentas"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "TipoCuentas PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<number>\",\n    \"descripcion\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/tipo-cuentas?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tipo-cuentas"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Tipo Cuentas Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tipo-cuentas?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tipo-cuentas"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of TipoCuentas model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tipo-cuentas?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tipo-cuentas"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": 5002561.341336653,\n  \"descripcion\": \"s\"\n },\n {\n  \"id\": -79698025.44928189,\n  \"descripcion\": \"cillum commodo\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Tipo Cuentas Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tipo-cuentas/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tipo-cuentas",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "TipoCuentas model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tipo-cuentas/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tipo-cuentas",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ventas",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Ventas Controller Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idCliente\": \"<number>\",\n    \"idFactura\": \"<number>\",\n    \"idTipoCuenta\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ventas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ventas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "7a384776-bd67-4582-b069-27c2d6c594dd",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ventas PUT success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idCliente\": \"<number>\",\n    \"idFactura\": \"<number>\",\n    \"idTipoCuenta\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/ventas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ventas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Ventas Controller Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idCliente\": \"<number>\",\n    \"idFactura\": \"<number>\",\n    \"idTipoCuenta\": \"<number>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ventas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ventas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "444146e8-80af-4502-8e54-c1c88d9d63ed",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ventas PATCH success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idCliente\": \"<number>\",\n    \"idFactura\": \"<number>\",\n    \"idTipoCuenta\": \"<number>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/ventas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ventas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Ventas Controller Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ventas/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ventas",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"id": "4d633572-6425-4046-a14a-0c6d6aacfe99",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ventas model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ventas/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ventas",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idCliente\": 15999757.745190024,\n \"idFactura\": -94914522.21991938,\n \"idTipoCuenta\": -81391110.39429513\n}"
+								}
+							]
+						},
+						{
+							"name": "Ventas Controller Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ventas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ventas",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "7499f2d3-39f5-49f8-98a0-89e54ed8d9ee",
+											"key": "id",
+											"value": "<number>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ventas DELETE success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ventas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ventas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Ventas Controller Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idCliente\": \"<number>\",\n    \"idFactura\": \"<number>\",\n    \"idTipoCuenta\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/ventas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ventas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Ventas model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idCliente\": \"<number>\",\n    \"idFactura\": \"<number>\",\n    \"idTipoCuenta\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ventas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ventas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"idCliente\": -15105494.155761838,\n \"idFactura\": 63317486.36650762,\n \"idTipoCuenta\": 28052647.956243336\n}"
+						}
+					]
+				},
+				{
+					"name": "Ventas Controller Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idCliente\": \"<number>\",\n    \"idFactura\": \"<number>\",\n    \"idTipoCuenta\": \"<number>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/ventas?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ventas"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Ventas PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idCliente\": \"<number>\",\n    \"idFactura\": \"<number>\",\n    \"idTipoCuenta\": \"<number>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ventas?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ventas"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				},
+				{
+					"name": "Ventas Controller Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/ventas?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ventas"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Ventas model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ventas?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ventas"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"idCliente\": 61752119.90130097,\n  \"idFactura\": 24781535.88018261,\n  \"idTipoCuenta\": 68599094.90842327\n },\n {\n  \"idCliente\": -56334220.88629976,\n  \"idFactura\": 57868423.036064595,\n  \"idTipoCuenta\": -94311897.65898806\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Ventas Controller Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/ventas/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ventas",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Ventas model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ventas/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ventas",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -24807820.274355486\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ping Controller.ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/ping",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Ping Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/ping",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ping"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"greeting\": \"elit eiusmod se\",\n \"date\": \"quis Ut dolore sint\",\n \"url\": \"laborum Lorem eiusmod culpa qui\",\n \"headers\": {\n  \"Content-Type\": \"adipisi\"\n }\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "baseUrl",
+			"key": "baseUrl",
+			"value": "http://[::1]:3000",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
